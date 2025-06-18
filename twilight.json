@@ -1,50 +1,32 @@
 {
+  "features": [
+    "mega-menu",
+    "fonts",
+    "color",
+    "breadcrumb",
+    "unite-cards-height",
+    "component-featured-products",
+    "component-fixed-banner",
+    "component-fixed-products",
+    "component-products-slider",
+    "component-photos-slider",
+    "component-parallax-background",
+    "component-testimonials",
+    "component-square-photos",
+    "component-store-features",
+    "component-youtube",
+    "menu-images",
+    "filters"
+  ],
   "components": [
     {
       "key": "rasel-products",
       "title": "منتجات رسيل",
       "icon": "sicon-products",
-      "image": "https://cdn.salla.sa/lKXZlp/nkHaQaDRzmbYIlg2TmbTZLuRNEKExvMpDbUAmqJD.jpg",
       "path": "home.rasel-products",
+      "image": "https://cdn.salla.sa/mQgZlG/K36XDnXG3odwQs7Xzy68IpM2wNuJ7uTImfBInlQ8.png",
       "is_default": true,
-      "fields": [
-        {
-          "type": "string",
-          "id": "title",
-          "label": "عنوان القسم",
-          "multilanguage": true,
-          "format": "text",
-          "placeholder": "مثال: مختاراتنا المميزة",
-          "required": false
-        },
-        {
-          "type": "items",
-          "id": "category",
-          "label": "اختيار التصنيف",
-          "format": "dropdown-list",
-          "source": "categories",
-          "required": false,
-          "multichoice": false,
-          "searchable": true
-        },
-        {
-          "type": "number",
-          "id": "limit",
-          "label": "عدد المنتجات المعروضة",
-          "format": "integer",
-          "required": false,
-          "default": 4,
-          "min": 2,
-          "max": 20
-        },
-        {
-          "type": "boolean",
-          "id": "show_all_button",
-          "label": "عرض زر (عرض الكل)",
-          "format": "switch",
-          "value": true
-        }
-      ]
+      "fields": []
     }
   ]
 }
