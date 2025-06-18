@@ -24,7 +24,6 @@
     "menu-images",
     "filters"
   ],
-  "settings": [],
   "components": [
     {
       "key": "rasel-products",
@@ -35,62 +34,54 @@
       "is_default": true,
       "fields": [
         {
-          "type": "static",
-          "format": "description",
-          "id": "rasel-products-preview",
-          "value": "<div style='margin: -24px -20px 20px'><img class='w-full' src='https://cdn.salla.network/images/themes/raed/preview-images/slider-products-with-bg.png?v=1.1'></div>"
-        },
-        {
           "type": "string",
-          "icon": "sicon-format-text-alt",
-          "label": "عنوان القسم",
-          "multilanguage": true,
           "id": "title",
+          "label": "العنوان الرئيسي",
+          "multilanguage": true,
           "format": "text",
           "required": false,
-          "placeholder": "اكتب عنوان القسم هنا"
+          "placeholder": "أدخل عنوان القسم..."
         },
         {
           "type": "string",
-          "icon": "sicon-typography",
-          "label": "وصف القسم",
+          "id": "description",
+          "label": "نص توضيحي",
           "multilanguage": true,
-          "id": "sub_title",
           "format": "textarea",
           "required": false,
-          "placeholder": "اكتب وصفاً للقسم هنا"
+          "placeholder": "يمكنك كتابة وصف مختصر..."
         },
         {
           "type": "items",
-          "icon": "sicon-products",
-          "label": "اختر المنتجات",
           "id": "products",
+          "label": "اختر المنتجات",
           "format": "dropdown-list",
-          "required": true,
-          "multichoice": true,
           "source": "products",
-          "searchable": true,
+          "multichoice": true,
+          "required": true,
+          "maxLength": 12,
           "minLength": 1,
-          "maxLength": 12
+          "searchable": true
         },
         {
           "type": "items",
-          "icon": "sicon-link",
-          "label": "رابط عرض الكل (اختياري)",
           "id": "display_all_url",
+          "label": "رابط عرض الكل",
           "format": "variable-list",
-          "required": false,
           "source": "custom",
           "searchable": true,
+          "required": false,
           "sources": [
             { "label": "منتج", "key": "products", "value": "products" },
             { "label": "تصنيف", "key": "categories", "value": "categories" },
+            { "label": "ماركة تجارية", "key": "brands", "value": "brands" },
             { "label": "رابط خارجي", "key": "custom", "value": "custom" }
           ]
         }
       ]
     }
   ],
+  "settings": [],
   "support_url": null,
   "description": {
     "ar": "",
