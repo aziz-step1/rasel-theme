@@ -7,5 +7,6 @@
     "fashion",
     "electronics",
     "digital_products"
-  ]
+  ],
+  "builder": true
 }

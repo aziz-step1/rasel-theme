@@ -1,0 +1,13 @@
+<section id="rasel-products-section" class="s-block s-block-products-slider container">
+  <div class="s-block__title"><h2>{{ title }}</h2></div>
+  <salla-products-slider
+    source="selected"
+    limit="8"
+    autoplay
+    source-value="[{{ products|map((p) => p.id)|join(',') }}]"
+    block-title="{{ title }}"
+    block-subtitle="{{ subtitle }}"
+    display-all-url="{{ display_all_url }}"
+    slider-id="rasel-products-slider"
+  ></salla-products-slider>
+</section>
