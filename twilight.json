@@ -1,90 +1,50 @@
 {
-  "name": {
-    "ar": "RASEL",
-    "en": "RASEL"
-  },
-  "repository": "https://github.com/aziz-step1/rasel",
-  "author_email": "step1.store.2030@gmail.com",
-  "features": [
-    "mega-menu",
-    "fonts",
-    "color",
-    "breadcrumb",
-    "unite-cards-height",
-    "component-featured-products",
-    "component-fixed-banner",
-    "component-fixed-products",
-    "component-products-slider",
-    "component-photos-slider",
-    "component-parallax-background",
-    "component-testimonials",
-    "component-square-photos",
-    "component-store-features",
-    "component-youtube",
-    "menu-images",
-    "filters"
-  ],
   "components": [
     {
       "key": "rasel-products",
       "title": "منتجات رسيل",
       "icon": "sicon-products",
-      "image": "https://cdn.salla.sa/mQgZlG/3hhreht06MIPFWepyuz42rg3bHqGZIYmDVs1PjYc.png",
+      "image": "https://cdn.salla.sa/lKXZlp/nkHaQaDRzmbYIlg2TmbTZLuRNEKExvMpDbUAmqJD.jpg",
       "path": "home.rasel-products",
       "is_default": true,
       "fields": [
         {
           "type": "string",
           "id": "title",
-          "label": "العنوان الرئيسي",
+          "label": "عنوان القسم",
           "multilanguage": true,
           "format": "text",
-          "required": false,
-          "placeholder": "أدخل عنوان القسم..."
-        },
-        {
-          "type": "string",
-          "id": "description",
-          "label": "نص توضيحي",
-          "multilanguage": true,
-          "format": "textarea",
-          "required": false,
-          "placeholder": "يمكنك كتابة وصف مختصر..."
+          "placeholder": "مثال: مختاراتنا المميزة",
+          "required": false
         },
         {
           "type": "items",
-          "id": "products",
-          "label": "اختر المنتجات",
+          "id": "category",
+          "label": "اختيار التصنيف",
           "format": "dropdown-list",
-          "source": "products",
-          "multichoice": true,
-          "required": true,
-          "maxLength": 12,
-          "minLength": 1,
+          "source": "categories",
+          "required": false,
+          "multichoice": false,
           "searchable": true
         },
         {
-          "type": "items",
-          "id": "display_all_url",
-          "label": "رابط عرض الكل",
-          "format": "variable-list",
-          "source": "custom",
-          "searchable": true,
+          "type": "number",
+          "id": "limit",
+          "label": "عدد المنتجات المعروضة",
+          "format": "integer",
           "required": false,
-          "sources": [
-            { "label": "منتج", "key": "products", "value": "products" },
-            { "label": "تصنيف", "key": "categories", "value": "categories" },
-            { "label": "ماركة تجارية", "key": "brands", "value": "brands" },
-            { "label": "رابط خارجي", "key": "custom", "value": "custom" }
-          ]
+          "default": 4,
+          "min": 2,
+          "max": 20
+        },
+        {
+          "type": "boolean",
+          "id": "show_all_button",
+          "label": "عرض زر (عرض الكل)",
+          "format": "switch",
+          "value": true
         }
       ]
     }
-  ],
-  "settings": [],
-  "support_url": null,
-  "description": {
-    "ar": "",
-    "en": ""
-  }
+  ]
 }
