@@ -134,6 +134,52 @@
       "image": "https://cdn.salla.sa/images/components/featured-products.png",
       "path": "home.featured-products",
       "fields": []
+    },
+    {
+      "key": "rasel-slider",
+      "title": "سلايدر رسيل",
+      "icon": "sicon-slider",
+      "image": "assets/images/rasel-slider-preview.png",
+      "path": "home.rasel-slider",
+      "fields": [
+        {
+          "type": "repeater",
+          "id": "slides",
+          "label": "شرائح السلايدر",
+          "min": 1,
+          "max": 5,
+          "fields": [
+            {
+              "type": "image",
+              "id": "image",
+              "label": "صورة الخلفية"
+            },
+            {
+              "type": "string",
+              "id": "title",
+              "label": "عنوان الشريحة",
+              "multilanguage": true
+            },
+            {
+              "type": "string",
+              "id": "subtitle",
+              "label": "نص فرعي",
+              "multilanguage": true
+            },
+            {
+              "type": "string",
+              "id": "button_text",
+              "label": "نص الزر",
+              "multilanguage": true
+            },
+            {
+              "type": "url",
+              "id": "button_link",
+              "label": "رابط الزر"
+            }
+          ]
+        }
+      ]
     }
   ],
   "support_url": null,
