@@ -1,0 +1,11 @@
+
+<section class="py-10 px-4 bg-white">
+  <div class="max-w-7xl mx-auto text-center mb-6">
+    <h2 class="text-2xl font-bold">منتجات مميزة</h2>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-7xl mx-auto">
+    {% for i in (1..4) %}
+      <salla-product-card product-id="product_{{ i }}" layout="default" />
+    {% endfor %}
+  </div>
+</section>

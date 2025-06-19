@@ -1,0 +1,16 @@
+
+<section class="py-10 px-4 bg-white">
+  <div class="max-w-7xl mx-auto text-center mb-6">
+    <h2 class="text-2xl font-bold">{{ fields.title }}</h2>
+    <p class="text-gray-500">{{ fields.sub_title }}</p>
+  </div>
+  {% if fields.products %}
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-7xl mx-auto">
+      {% for product in fields.products %}
+        <salla-product-card product-id="{{ product }}" layout="default" />
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="text-center text-gray-400">لم يتم اختيار منتجات بعد</p>
+  {% endif %}
+</section>

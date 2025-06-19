@@ -107,7 +107,7 @@
       "title": "سلايدر متقدم (رسيل)",
       "icon": "sicon-slider",
       "image": "https://cdn.salla.sa/images/components/slider.png",
-      "path": "home.slider",
+      "path": "home.rasel-slider",
       "is_default": true,
       "fields": []
     },
