@@ -5,153 +5,17 @@
   },
   "repository": "https://github.com/aziz-step1/rasel",
   "author_email": "step1.store.2030@gmail.com",
-  "features": [
-    "mega-menu",
-    "fonts",
-    "color",
-    "breadcrumb",
-    "unite-cards-height",
-    "component-featured-products",
-    "component-fixed-banner",
-    "component-fixed-products",
-    "component-products-slider",
-    "component-photos-slider",
-    "component-parallax-background",
-    "component-testimonials",
-    "component-square-photos",
-    "component-store-features",
-    "component-youtube",
-    "menu-images",
-    "filters"
-  ],
+  "features": [],
   "settings": [],
   "components": [
     {
       "key": "rasel-products",
       "title": "منتجات رسيل",
       "icon": "sicon-products",
-      "image": "https://cdn.salla.sa/mQgZlG/3hhreht06MIPFWepyuz42rg3bHqGZIYmDVs1PjYc.png",
+      "image": "assets/images/rasel-products-preview.png",
       "path": "home.rasel-products",
       "is_default": true,
-      "fields": [
-        {
-          "type": "static",
-          "format": "description",
-          "id": "rasel-products-preview",
-          "value": "<div style='margin: -24px -20px 20px'><img class='w-full' src='https://cdn.salla.network/images/themes/raed/preview-images/slider-products-with-bg.png?v=1.1'></div>"
-        },
-        {
-          "type": "string",
-          "icon": "sicon-format-text-alt",
-          "label": "عنوان القسم",
-          "multilanguage": true,
-          "id": "title",
-          "format": "text",
-          "required": false,
-          "placeholder": "اكتب عنوان القسم هنا"
-        },
-        {
-          "type": "string",
-          "icon": "sicon-typography",
-          "label": "وصف القسم",
-          "multilanguage": true,
-          "id": "sub_title",
-          "format": "textarea",
-          "required": false,
-          "placeholder": "اكتب وصفاً للقسم هنا"
-        },
-        {
-          "type": "items",
-          "icon": "sicon-products",
-          "label": "اختر المنتجات",
-          "id": "products",
-          "format": "dropdown-list",
-          "required": true,
-          "multichoice": true,
-          "source": "products",
-          "searchable": true,
-          "minLength": 1,
-          "maxLength": 12
-        },
-        {
-          "type": "items",
-          "icon": "sicon-link",
-          "label": "رابط عرض الكل (اختياري)",
-          "id": "display_all_url",
-          "format": "variable-list",
-          "required": false,
-          "source": "custom",
-          "searchable": true,
-          "sources": [
-            {
-              "label": "منتج",
-              "key": "products",
-              "value": "products"
-            },
-            {
-              "label": "تصنيف",
-              "key": "categories",
-              "value": "categories"
-            },
-            {
-              "label": "رابط خارجي",
-              "key": "custom",
-              "value": "custom"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "key": "rasel-slider",
-      "title": "سلايدر رسيل",
-      "icon": "sicon-slider",
-      "image": "assets/images/slider-preview.png",
-      "path": "home.rasel-slider",
-      "fields": [
-        {
-          "type": "repeater",
-          "id": "slides",
-          "label": "الشرائح",
-          "min": 1,
-          "max": 5,
-          "fields": [
-            {
-              "type": "image",
-              "id": "image",
-              "label": "صورة الخلفية"
-            },
-            {
-              "type": "string",
-              "id": "title",
-              "label": "العنوان الرئيسي",
-              "multilanguage": true
-            },
-            {
-              "type": "string",
-              "id": "subtitle",
-              "label": "النص الفرعي",
-              "multilanguage": true
-            },
-            {
-              "type": "string",
-              "id": "button_text",
-              "label": "نص الزر",
-              "multilanguage": true
-            },
-            {
-              "type": "url",
-              "id": "button_link",
-              "label": "رابط الزر"
-            }
-          ]
-        }
-      ]
+      "fields": []
     }
-  ],
-  "support_url": null,
-  "description": {
-    "ar": "",
-    "en": ""
-  }
+  ]
 }
