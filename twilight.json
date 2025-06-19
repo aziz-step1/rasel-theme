@@ -104,7 +104,7 @@
     },
     {
       "key": "slider",
-      "title": "سلايدر متقدم (سيلا)",
+      "title": "سلايدر متقدم (رسيل)",
       "icon": "sicon-slider",
       "image": "https://cdn.salla.sa/images/components/slider.png",
       "path": "home.slider",
@@ -113,7 +113,7 @@
     },
     {
       "key": "categories",
-      "title": "روابط دائرية (سيلا)",
+      "title": "روابط دائرية (رسيل)",
       "icon": "sicon-category",
       "image": "https://cdn.salla.sa/images/components/round-categories.png",
       "path": "home.categories",
@@ -121,7 +121,7 @@
     },
     {
       "key": "banner",
-      "title": "بانر عرض (سيلا)",
+      "title": "بانر عرض (رسيل)",
       "icon": "sicon-banner",
       "image": "https://cdn.salla.sa/images/components/wide-banner.png",
       "path": "home.banner",
@@ -129,7 +129,7 @@
     },
     {
       "key": "featured-products",
-      "title": "منتجات مميزة (سيلا)",
+      "title": "منتجات مميزة (رسيل)",
       "icon": "sicon-products",
       "image": "https://cdn.salla.sa/images/components/featured-products.png",
       "path": "home.featured-products",
