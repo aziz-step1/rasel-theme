@@ -83,9 +83,67 @@
           "source": "custom",
           "searchable": true,
           "sources": [
-            { "label": "منتج", "key": "products", "value": "products" },
-            { "label": "تصنيف", "key": "categories", "value": "categories" },
-            { "label": "رابط خارجي", "key": "custom", "value": "custom" }
+            {
+              "label": "منتج",
+              "key": "products",
+              "value": "products"
+            },
+            {
+              "label": "تصنيف",
+              "key": "categories",
+              "value": "categories"
+            },
+            {
+              "label": "رابط خارجي",
+              "key": "custom",
+              "value": "custom"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rasel-slider",
+      "title": "سلايدر رسيل",
+      "icon": "sicon-slider",
+      "image": "assets/images/slider-preview.png",
+      "path": "home.rasel-slider",
+      "fields": [
+        {
+          "type": "repeater",
+          "id": "slides",
+          "label": "الشرائح",
+          "min": 1,
+          "max": 5,
+          "fields": [
+            {
+              "type": "image",
+              "id": "image",
+              "label": "صورة الخلفية"
+            },
+            {
+              "type": "string",
+              "id": "title",
+              "label": "العنوان الرئيسي",
+              "multilanguage": true
+            },
+            {
+              "type": "string",
+              "id": "subtitle",
+              "label": "النص الفرعي",
+              "multilanguage": true
+            },
+            {
+              "type": "string",
+              "id": "button_text",
+              "label": "نص الزر",
+              "multilanguage": true
+            },
+            {
+              "type": "url",
+              "id": "button_link",
+              "label": "رابط الزر"
+            }
           ]
         }
       ]
