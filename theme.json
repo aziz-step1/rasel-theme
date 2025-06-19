@@ -8,5 +8,30 @@
     "electronics",
     "digital_products"
   ],
-  "builder": true
+  "builder": true,
+  "components": [
+    {
+      "name": "component-products-custom",
+      "title": "منتجات رسيل",
+      "icon": "sicon-star",
+      "path": "home.products-custom",
+      "fields": [
+        {
+          "id": "title",
+          "type": "string",
+          "label": "عنوان القسم",
+          "default": "منتجاتنا المختارة"
+        },
+        {
+          "id": "products",
+          "type": "collection",
+          "format": "product",
+          "label": "اختر المنتجات",
+          "required": true,
+          "minLength": 1,
+          "maxLength": 10
+        }
+      ]
+    }
+  ]
 }

@@ -1,0 +1,30 @@
+
+{# مكون منتجات رسيل باستخدام بطاقة شبيهة بشوبيفاي #}
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+  {% for product in products %}
+    <div class="group relative border rounded-2xl overflow-hidden shadow hover:shadow-lg transition-shadow duration-300">
+      <a href="{{ product.url }}" class="block overflow-hidden relative">
+        <img src="{{ product.image.url }}" alt="{{ product.name }}" class="w-full h-auto transition-transform duration-300 group-hover:scale-105">
+        {% if product.promotion_title %}
+          <span class="absolute top-3 start-3 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">
+            {{ product.promotion_title }}
+          </span>
+        {% endif %}
+      </a>
+      <div class="p-4">
+        <h3 class="text-base font-semibold text-gray-900 line-clamp-2">
+          <a href="{{ product.url }}">{{ product.name }}</a>
+        </h3>
+        <div class="mt-2 flex items-center gap-2">
+          {% if product.is_on_sale %}
+            <span class="text-red-500 font-bold">{{ product.sale_price|money }}</span>
+            <span class="text-gray-400 line-through text-sm">{{ product.regular_price|money }}</span>
+          {% else %}
+            <span class="text-gray-900 font-bold">{{ product.price|money }}</span>
+          {% endif %}
+        </div>
+        <salla-add-product-button class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition" product-id="{{ product.id }}"></salla-add-product-button>
+      </div>
+    </div>
+  {% endfor %}
+</div>
