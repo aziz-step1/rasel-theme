@@ -12,30 +12,10 @@
       "key": "banner",
       "title": "بانر عرض (رسيل)",
       "icon": "sicon-banner",
-      "image": "https://i.imgur.com/YvugQOH.png",
+      "image": "https://cdn.salla.sa/images/components/wide-banner.png",
       "path": "home.banner",
+      "is_default": true,
       "fields": [
-        {
-          "type": "select",
-          "id": "banner_style",
-          "label": "نمط عرض البنر",
-          "required": true,
-          "options": [
-            {
-              "label": "بنر صورة فقط",
-              "value": "image_only"
-            },
-            {
-              "label": "بنر مع نص وزر",
-              "value": "with_text"
-            },
-            {
-              "label": "بنر مقسوم عمودين",
-              "value": "split"
-            }
-          ],
-          "default": "image_only"
-        },
         {
           "type": "image",
           "id": "image",
@@ -45,19 +25,22 @@
         {
           "type": "string",
           "id": "title",
-          "label": "العنوان الرئيسي",
-          "multilanguage": true
+          "label": "عنوان البنر",
+          "multilanguage": true,
+          "required": false
         },
         {
           "type": "string",
           "id": "button_text",
           "label": "نص الزر",
-          "multilanguage": true
+          "multilanguage": true,
+          "required": false
         },
         {
           "type": "url",
           "id": "button_link",
-          "label": "رابط الزر"
+          "label": "رابط الزر",
+          "required": false
         }
       ]
     }
