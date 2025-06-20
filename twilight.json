@@ -125,7 +125,41 @@
       "icon": "sicon-banner",
       "image": "https://cdn.salla.sa/images/components/wide-banner.png",
       "path": "home.banner",
-      "fields": []
+      "fields": [
+        {
+          "type": "image",
+          "id": "image",
+          "label": "صورة البنر",
+          "required": true
+        },
+        {
+          "type": "items",
+          "icon": "sicon-link",
+          "label": "الرابط عند الضغط على الصورة",
+          "id": "url",
+          "format": "variable-list",
+          "required": false,
+          "source": "custom",
+          "searchable": true,
+          "sources": [
+            {
+              "label": "منتج",
+              "key": "products",
+              "value": "products"
+            },
+            {
+              "label": "تصنيف",
+              "key": "categories",
+              "value": "categories"
+            },
+            {
+              "label": "رابط خارجي",
+              "key": "custom",
+              "value": "custom"
+            }
+          ]
+        }
+      ]
     },
     {
       "key": "featured-products",
