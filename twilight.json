@@ -134,6 +134,49 @@
       "image": "https://cdn.salla.sa/images/components/featured-products.png",
       "path": "home.featured-products",
       "fields": []
+    },
+    {
+      "key": "rasel-banner",
+      "title": "بانر رسيل",
+      "icon": "sicon-banner",
+      "image": "https://cdn.salla.sa/images/components/wide-banner.png",
+      "path": "home.rasel-banner",
+      "is_default": true,
+      "fields": [
+        {
+          "type": "image",
+          "id": "image",
+          "label": "صورة البنر",
+          "required": true
+        },
+        {
+          "type": "items",
+          "icon": "sicon-link",
+          "label": "الرابط عند الضغط على الصورة",
+          "id": "url",
+          "format": "variable-list",
+          "required": false,
+          "source": "custom",
+          "searchable": true,
+          "sources": [
+            {
+              "label": "منتج",
+              "key": "products",
+              "value": "products"
+            },
+            {
+              "label": "تصنيف",
+              "key": "categories",
+              "value": "categories"
+            },
+            {
+              "label": "رابط خارجي",
+              "key": "custom",
+              "value": "custom"
+            }
+          ]
+        }
+      ]
     }
   ],
   "support_url": null,
